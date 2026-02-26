@@ -22,7 +22,7 @@ export default function AboutPage() {
       {/* ── PAGE HEADER ── */}
       <div className="page-header-bg pt-[100px] pb-[60px] px-6">
         <div className="max-w-site mx-auto relative z-10">
-          <div className="text-[11px] font-bold uppercase tracking-[0.12em] text-gold mb-5">About</div>
+          <div className="text-[11px] font-bold uppercase tracking-[0.12em] text-gold mb-3">About</div>
           <h1 className="font-display font-medium text-white max-w-[640px] mb-4 leading-[1.2]"
               style={{ fontSize: 'clamp(32px, 4vw, 48px)', letterSpacing: '-0.02em' }}>
             We Believe Data Should Serve People
@@ -69,7 +69,7 @@ export default function AboutPage() {
               <div className="flex flex-col">
                 {governance.map((item, i) => (
                   <div key={item.title}
-                       className={`pb-3 mb-3 ${i < governance.length - 1 ? 'border-b border-gray-200' : ''}`}>
+                       className={`pb-3 ${i < governance.length - 1 ? 'border-b border-gray-200 mb-3' : ''}`}>
                     <div className="text-[14px] font-semibold mb-0.5">{item.title}</div>
                     <div className="text-[13px] text-gray-500">{item.desc}</div>
                   </div>

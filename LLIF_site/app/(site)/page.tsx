@@ -33,7 +33,7 @@ export default function HomePage() {
       {/* ── HERO ── */}
       <section className="hero-bg">
         <div className="hero-grid" aria-hidden="true" />
-        <div className="max-w-site mx-auto px-6 pt-24 pb-20 relative z-10">
+        <div className="max-w-site mx-auto px-6 pt-[100px] pb-20 relative z-10">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full mb-6 text-xs font-semibold text-gold-light uppercase tracking-[0.08em]"
                style={{ background: 'rgba(212,168,83,0.12)', border: '1px solid rgba(212,168,83,0.25)' }}>
             501(c)(3) Nonprofit Foundation
@@ -70,7 +70,7 @@ export default function HomePage() {
       </section>
 
       {/* ── WHY WE EXIST ── */}
-      <section className="py-24 px-6 bg-white">
+      <section className="py-[100px] px-6 bg-white">
         <div className="max-w-[900px] mx-auto text-center">
           <div className="text-[11px] font-bold uppercase tracking-[0.12em] text-gold mb-3">Why We Exist</div>
           <p className="font-display font-normal text-navy leading-[1.4] mb-8"

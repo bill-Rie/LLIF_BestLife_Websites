@@ -1,0 +1,11 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/(site)/contact/page": "app/(site)/contact/page.js",
+  "/(site)/about/page": "app/(site)/about/page.js",
+  "/(site)/grants/page": "app/(site)/grants/page.js",
+  "/(site)/platform/page": "app/(site)/platform/page.js",
+  "/(site)/developers/page": "app/(site)/developers/page.js",
+  "/(site)/page": "app/(site)/page.js",
+  "/(site)/researchers/page": "app/(site)/researchers/page.js",
+  "/(site)/programs/page": "app/(site)/programs/page.js"
+}

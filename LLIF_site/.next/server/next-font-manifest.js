@@ -1,1 +1,1 @@
-self.__NEXT_FONT_MANIFEST='{"pages":{},"app":{"/home/mcb/projects/LLIF_BestLife_Websites/LLIF_site/app/layout":["static/media/c9cac29382a46c9d-s.p.woff2","static/media/6e8c7cb283336a9d-s.p.woff2"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}';
+self.__NEXT_FONT_MANIFEST='{"pages":{},"app":{"/home/mcb/projects/LLIF_BestLife_Websites/LLIF_site/app/layout":["static/media/13971731025ec697-s.p.woff2","static/media/af4bf8399d1aacdf-s.p.woff2"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}';

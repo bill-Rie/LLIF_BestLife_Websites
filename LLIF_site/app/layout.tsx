@@ -1,33 +1,23 @@
-import type { Metadata } from 'next'
-import { DM_Sans, Fraunces } from 'next/font/google'
-import './globals.css'
+import type { Metadata } from "next";
+import { DM_Sans, Fraunces } from "next/font/google";
+import "./globals.css";
 
 const dmSans = DM_Sans({
-  subsets: ['latin'],
-  axes: ['opsz'],
-  variable: '--font-dm-sans',
-  display: 'swap',
-})
+  subsets: ["latin"],
+  variable: "--font-body",
+  display: "swap",
+});
 
 const fraunces = Fraunces({
-  subsets: ['latin'],
-  axes: ['opsz'],
-  variable: '--font-fraunces',
-  display: 'swap',
-})
+  subsets: ["latin"],
+  variable: "--font-display",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
-  title: {
-    default: 'LLIF — Live Learn Innovate Foundation',
-    template: '%s | LLIF',
-  },
-  description:
-    'LLIF is a 501(c)(3) nonprofit building data infrastructure that gives individuals agency over their data while enabling better decisions at every scale.',
-  openGraph: {
-    siteName: 'Live Learn Innovate Foundation',
-    type: 'website',
-  },
-}
+  title: "LLIF",
+  description: "LLIF — ethical longitudinal data infrastructure for Best Life.",
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -36,5 +26,5 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
       </body>
     </html>
-  )
+  );
 }

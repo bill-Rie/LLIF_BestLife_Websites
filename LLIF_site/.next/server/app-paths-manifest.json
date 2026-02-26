@@ -4,8 +4,8 @@
   "/(site)/about/page": "app/(site)/about/page.js",
   "/(site)/grants/page": "app/(site)/grants/page.js",
   "/(site)/platform/page": "app/(site)/platform/page.js",
-  "/(site)/developers/page": "app/(site)/developers/page.js",
   "/(site)/page": "app/(site)/page.js",
   "/(site)/researchers/page": "app/(site)/researchers/page.js",
+  "/(site)/developers/page": "app/(site)/developers/page.js",
   "/(site)/programs/page": "app/(site)/programs/page.js"
 }

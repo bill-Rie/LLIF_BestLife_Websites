@@ -26,7 +26,8 @@ export default function DevelopersPage() {
   return (
     <>
       {/* ── PAGE HEADER ── */}
-      <div className="page-header-bg pt-24 pb-16 px-6">
+      {/* .page-header { padding: 100px 24px 60px } */}
+      <div className="page-header-bg pt-[100px] pb-[60px] px-6">
         <div className="max-w-site mx-auto relative z-10">
           <div className="text-[11px] font-bold uppercase tracking-[0.12em] text-gold mb-5">For Developers</div>
           <h1 className="font-display font-medium text-white max-w-[640px] mb-4 leading-[1.2]"
@@ -104,7 +105,8 @@ export default function DevelopersPage() {
       {/* ── NONPROFIT ADVANTAGE ── */}
       <section className="py-20 px-6 text-center" style={{ background: '#FDF5E6' }}>
         <div className="max-w-[680px] mx-auto">
-          <div className="text-[11px] font-bold uppercase tracking-[0.12em] mb-3" style={{ color: '#B8902A' }}>The Nonprofit Advantage</div>
+          {/* section-label uses default color: var(--gold) — no explicit override in HTML */}
+          <div className="text-[11px] font-bold uppercase tracking-[0.12em] text-gold mb-3">The Nonprofit Advantage</div>
           <h2 className="font-display font-medium text-navy mb-4"
               style={{ fontSize: 'clamp(28px, 3.5vw, 40px)', letterSpacing: '-0.02em' }}>
             We&apos;ll Never Compete With You
@@ -134,7 +136,8 @@ export default function DevelopersPage() {
               entire backend. The app offers health and symptom tracking, nutrition, fitness, sleep, mood journaling, habit tracking,
               environmental correlation, and soon — a curated library of Programs from the LLIF marketplace.
             </p>
-            <p className="text-[15px] text-gray-600 leading-[1.7] mb-5">
+            {/* .case-study-box p { margin-bottom: 16px } */}
+            <p className="text-[15px] text-gray-600 leading-[1.7] mb-4">
               <strong>Best Life Inc. owns its app, brand, and user relationships.</strong> LLIF provides the data foundation. This is
               exactly the model available to you.
             </p>

@@ -41,7 +41,7 @@ export default function GrantsPage() {
   return (
     <>
       {/* ── PAGE HEADER ── */}
-      <div className="page-header-bg pt-24 pb-16 px-6">
+      <div className="page-header-bg pt-[100px] pb-[60px] px-6">
         <div className="max-w-site mx-auto relative z-10">
           <div className="text-[13px] text-gray-400 mb-5 flex items-center gap-1.5">
             <span>For Researchers</span>

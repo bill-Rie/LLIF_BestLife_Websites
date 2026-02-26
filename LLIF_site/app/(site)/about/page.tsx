@@ -20,7 +20,7 @@ export default function AboutPage() {
   return (
     <>
       {/* ── PAGE HEADER ── */}
-      <div className="page-header-bg pt-24 pb-16 px-6">
+      <div className="page-header-bg pt-[100px] pb-[60px] px-6">
         <div className="max-w-site mx-auto relative z-10">
           <div className="text-[11px] font-bold uppercase tracking-[0.12em] text-gold mb-5">About</div>
           <h1 className="font-display font-medium text-white max-w-[640px] mb-4 leading-[1.2]"
@@ -64,7 +64,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div id="governance" className="bg-cream rounded-2xl border border-gray-200 p-8">
+            <div id="governance" className="bg-cream rounded-[14px] border border-gray-200 p-8">
               <h3 className="font-display text-[18px] font-semibold mb-4">Governance</h3>
               <div className="flex flex-col">
                 {governance.map((item, i) => (

@@ -10,7 +10,7 @@ export default function ContactPage() {
   return (
     <>
       {/* ── PAGE HEADER ── */}
-      <div className="page-header-bg pt-24 pb-16 px-6">
+      <div className="page-header-bg pt-[100px] pb-[60px] px-6">
         <div className="max-w-site mx-auto relative z-10">
           <h1 className="font-display font-medium text-white max-w-[640px] mb-4 leading-[1.2]"
               style={{ fontSize: 'clamp(32px, 4vw, 48px)', letterSpacing: '-0.02em' }}>

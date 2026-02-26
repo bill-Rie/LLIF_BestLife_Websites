@@ -48,7 +48,8 @@ export default function ResearchersPage() {
   return (
     <>
       {/* ── PAGE HEADER ── */}
-      <div className="page-header-bg pt-24 pb-16 px-6">
+      {/* .page-header { padding: 100px 24px 60px } */}
+      <div className="page-header-bg pt-[100px] pb-[60px] px-6">
         <div className="max-w-site mx-auto relative z-10">
           <div className="text-[11px] font-bold uppercase tracking-[0.12em] text-gold mb-5">For Researchers</div>
           <h1 className="font-display font-medium text-white max-w-[640px] mb-4 leading-[1.2]"

@@ -63,6 +63,71 @@
   transform: translateY(0) !important;
 }
 
+/* ── News article prose ── */
+.prose-llif {
+  color: #495057;
+  font-size: 16px;
+  line-height: 1.8;
+}
+.prose-llif h2 {
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-size: clamp(22px, 2.5vw, 28px);
+  font-weight: 500;
+  color: #0B1D33;
+  letter-spacing: -0.015em;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+.prose-llif h3 {
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-size: clamp(18px, 2vw, 22px);
+  font-weight: 500;
+  color: #0B1D33;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+.prose-llif p {
+  margin-bottom: 1.4rem;
+}
+.prose-llif ul,
+.prose-llif ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.4rem;
+}
+.prose-llif li {
+  margin-bottom: 0.4rem;
+}
+.prose-llif ul li {
+  list-style-type: disc;
+}
+.prose-llif ol li {
+  list-style-type: decimal;
+}
+.prose-llif strong {
+  font-weight: 600;
+  color: #343A40;
+}
+.prose-llif a {
+  color: #3D5A80;
+  text-decoration: underline;
+  text-decoration-color: rgba(61,90,128,0.35);
+}
+.prose-llif a:hover {
+  color: #0B1D33;
+}
+.prose-llif blockquote {
+  border-left: 3px solid #D4A853;
+  padding-left: 1.25rem;
+  color: #6C757D;
+  font-style: italic;
+  margin: 1.5rem 0;
+}
+.prose-llif hr {
+  border: none;
+  border-top: 1px solid #E9ECEF;
+  margin: 2rem 0;
+}
+
 /* ── Pricing featured badge ── */
 .pricing-featured::after {
   content: 'MOST POPULAR';

@@ -41,6 +41,7 @@ const navItems = [
     ],
   },
   { label: 'About', href: '/about' },
+  { label: 'News', href: '/news' },
 ]
 
 export default function Navbar() {

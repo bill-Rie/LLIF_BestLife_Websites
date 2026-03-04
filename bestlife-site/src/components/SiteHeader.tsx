@@ -1,12 +1,13 @@
 import Link from "next/link";
 
 const nav = [
-  { href: "/about", label: "About" },
-  { href: "/how-it-works", label: "How It Works" },
+  { href: "/what-is-best-life", label: "What is Best Life?" },
   { href: "/use-cases", label: "Use Cases" },
+  { href: "/programs", label: "Programs" },
+  { href: "/how-it-works", label: "How It Works" },
+  { href: "/download", label: "Download" },
   { href: "/news", label: "News" },
-  { href: "/for-researchers", label: "For Researchers" },
-  { href: "/privacy", label: "Privacy" },
+  { href: "/about", label: "About" },
 ];
 
 export default function SiteHeader() {

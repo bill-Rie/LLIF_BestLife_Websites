@@ -4,44 +4,71 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 const navItems = [
-  { label: 'Why LLIF', href: '/' },
-  {
-    label: 'Programs',
-    href: '/programs',
-    dropdown: [
-      { label: 'What Are Programs?', href: '/programs' },
-      { label: 'Program Examples', href: '/programs#examples' },
-      { label: 'For Organizers', href: '/programs#organizers' },
-    ],
-  },
   {
     label: 'Platform',
     href: '/platform',
     dropdown: [
-      { label: 'Infrastructure & API', href: '/platform' },
-      { label: 'Security & Compliance', href: '/platform#security' },
-      { label: 'Integrations', href: '/platform' },
+      { label: 'Overview', href: '/platform/overview' },
+      { label: 'Infrastructure', href: '/platform/infrastructure' },
+      { label: 'Privacy & Governance', href: '/platform/privacy-governance' },
+      { label: 'Security & Compliance', href: '/platform/security-compliance' },
+      { label: 'Integrations', href: '/platform/integrations' },
     ],
   },
   {
-    label: 'For Developers',
-    href: '/developers',
-    dropdown: [
-      { label: 'Build on LLIF', href: '/developers' },
-      { label: 'Pricing', href: '/developers#pricing' },
-      { label: 'Case Study: Best Life', href: '/developers#case-study' },
-    ],
-  },
-  {
-    label: 'For Researchers',
+    label: 'Researchers',
     href: '/researchers',
     dropdown: [
-      { label: 'Research Infrastructure', href: '/researchers' },
-      { label: 'Grant Proposal Support', href: '/grants' },
+      { label: 'Overview', href: '/researchers/overview' },
+      { label: 'Grant Support', href: '/researchers/grant-support' },
+      { label: 'Use Cases', href: '/researchers/use-cases' },
+      { label: 'Case Studies', href: '/researchers/case-studies' },
+      { label: 'Documentation', href: '/researchers/documentation' },
+      { label: 'Partnership', href: '/researchers/partnership' },
     ],
   },
-  { label: 'About', href: '/about' },
-  { label: 'News', href: '/news' },
+  {
+    label: 'Developers',
+    href: '/developers',
+    dropdown: [
+      { label: 'API Reference', href: '/developers/api' },
+      { label: 'SDKs', href: '/developers/sdks' },
+      { label: 'Documentation', href: '/developers/documentation' },
+      { label: 'Integrations', href: '/developers/integrations' },
+    ],
+  },
+  {
+    label: 'Community',
+    href: '/community',
+    dropdown: [
+      { label: 'Best Life', href: '/community/best-life' },
+      { label: 'Use Cases', href: '/community/use-cases' },
+      { label: 'Programs', href: '/community/programs' },
+      { label: 'Forum', href: '/community/forum' },
+    ],
+  },
+  {
+    label: 'News',
+    href: '/news',
+    dropdown: [
+      { label: 'Releases', href: '/news/releases' },
+      { label: 'Blog', href: '/news/blog' },
+      { label: 'Highlights', href: '/news/highlights' },
+      { label: 'Research', href: '/news/research' },
+    ],
+  },
+  {
+    label: 'About',
+    href: '/about',
+    dropdown: [
+      { label: 'Mission', href: '/about/mission' },
+      { label: 'Story', href: '/about/story' },
+      { label: 'Team', href: '/about/team' },
+      { label: 'Governance', href: '/about/governance' },
+      { label: 'Financials', href: '/about/financials' },
+    ],
+  },
+  { label: 'Contact', href: '/contact' },
 ]
 
 export default function Navbar() {

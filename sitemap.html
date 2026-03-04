@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site Map — LLIF &amp; Best Life</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #F8F9FA;
+      color: #212529;
+      line-height: 1.6;
+      padding: 40px 24px 80px;
+    }
+
+    .page-title {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #6C757D;
+      margin-bottom: 6px;
+    }
+    h1 {
+      font-size: clamp(26px, 4vw, 36px);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #0B1D33;
+      margin-bottom: 4px;
+    }
+    .subtitle {
+      font-size: 14px;
+      color: #6C757D;
+      margin-bottom: 48px;
+    }
+
+    .sites {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+      gap: 32px;
+      max-width: 1100px;
+    }
+
+    /* ── Site card ── */
+    .site-card {
+      background: #fff;
+      border: 1px solid #E9ECEF;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .site-header {
+      padding: 24px 28px 20px;
+      border-bottom: 1px solid #E9ECEF;
+    }
+    .site-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .site-name {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      margin-bottom: 2px;
+    }
+    .site-url {
+      font-size: 12px;
+      color: #6C757D;
+      font-family: ui-monospace, "SFMono-Regular", monospace;
+    }
+
+    /* LLIF brand */
+    .llif .site-label  { color: #D4A853; }
+    .llif .site-name   { color: #0B1D33; }
+
+    /* Best Life brand */
+    .bestlife .site-label { color: #000; }
+    .bestlife .site-name  { color: #111; }
+
+    /* ── Section group ── */
+    .section-group {
+      padding: 0 28px;
+    }
+    .section-group + .section-group {
+      border-top: 1px solid #F1F3F5;
+    }
+
+    .group-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #ADB5BD;
+      padding: 16px 0 8px;
+    }
+
+    /* ── Route row ── */
+    .route {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid #F8F9FA;
+    }
+    .route:last-child { border-bottom: none; }
+
+    .route-path {
+      font-family: ui-monospace, "SFMono-Regular", monospace;
+      font-size: 13px;
+      font-weight: 600;
+      color: #3D5A80;
+      min-width: 220px;
+    }
+    .route-label {
+      font-size: 13px;
+      color: #495057;
+      flex: 1;
+    }
+    .badge {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 100px;
+      white-space: nowrap;
+    }
+    .badge-featured  { background: #FDF5E6; color: #D4A853; border: 1px solid #E8C97A; }
+    .badge-ssg       { background: #E8F5EE; color: #2D8A56; border: 1px solid #a3d9bc; }
+    .badge-client    { background: #EBF3FB; color: #3D5A80; border: 1px solid #89B0D3; }
+    .badge-static    { background: #F1F3F5; color: #6C757D; border: 1px solid #DEE2E6; }
+    .badge-new       { background: #0B1D33; color: #D4A853; border: 1px solid #0B1D33; }
+
+    /* ── Legend ── */
+    .legend {
+      margin-top: 40px;
+      max-width: 1100px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 12px;
+      color: #6C757D;
+      align-items: center;
+    }
+    .legend-title {
+      font-weight: 600;
+      color: #495057;
+      margin-right: 4px;
+    }
+    .legend .badge { font-size: 10px; }
+
+    /* ── Footer ── */
+    .footer {
+      margin-top: 48px;
+      max-width: 1100px;
+      font-size: 12px;
+      color: #ADB5BD;
+      border-top: 1px solid #E9ECEF;
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-title">Site Map</div>
+  <h1>LLIF &amp; Best Life Websites</h1>
+  <p class="subtitle">Generated 2026-02-27 &nbsp;·&nbsp; Both sites: Next.js 15 · App Router · Static Generation</p>
+
+  <div class="sites">
+
+    <!-- ════════════════ LLIF ════════════════ -->
+    <div class="site-card llif">
+      <div class="site-header">
+        <div class="site-label">Infrastructure · 501(c)(3) Nonprofit</div>
+        <div class="site-name">LLIF</div>
+        <div class="site-url">llif.org &nbsp;/&nbsp; LLIF_site/</div>
+      </div>
+
+      <!-- Core pages -->
+      <div class="section-group">
+        <div class="group-label">Core Pages</div>
+
+        <div class="route">
+          <span class="route-path">/</span>
+          <span class="route-label">Home — Why LLIF, hero, trust bar, audiences</span>
+          <span class="badge badge-static">Static</span>
+        </div>
+        <div class="route">
+          <span class="route-path">/programs</span>
+          <span class="route-label">Programs — types, examples, for organizers</span>
+          <span class="badge badge-static">Static</span>
+        </div>
+        <div class="route">
+          <span class="route-path">/platform</span>
+          <span class="route-label">Platform — features grid, security &amp; compliance</span>
+          <span class="badge badge-static">Static</span>
+        </div>
+        <div class="route">
+          <span class="route-path">/developers</span>
+          <span class="route-label">For Developers — API, pricing, Best Life case study</span>
+          <span class="badge badge-static">Static</span>
+        </div>
+        <div class="route">
+          <span class="route-path">/researchers</span>
+          <span class="route-label">For Researchers — features, grant support teaser</span>
+          <span class="badge badge-static">Static</span>
+        </div>
+        <div class="route">
+          <span class="route-path">/grants</span>
+          <span class="route-label">Grant Proposal Support — process, boilerplate, LoS form</span>
+          <span class="badge badge-static">Static</span>
+        </div>
+        <div class="route">
+          <span class="route-path">/about</span>
+          <span class="route-label">About — nonprofit rationale, governance, financial reports</span>
+          <span class="badge badge-static">Static</span>
+        </div>
+        <div class="route">
+          <span class="route-path">/contact</span>
+          <span class="route-label">Contact — tabbed: demo / general / early partner</span>
+          <span class="badge badge-client">Client</span>
+        </div>
+      </div>
+
+      <!-- News hub -->
+      <div class="section-group">
+        <div class="group-label">News &nbsp;<span class="badge badge-new">New</span></div>
+
+        <div class="route">
+          <span class="route-path">/news</span>
+          <span class="route-label">News Hub — featured, category filters, search, privacy callout</span>
+          <span class="badge badge-client">Client filter</span>
+        </div>
+        <div class="route">
+          <span class="route-path">/news/llif-infrastructure-launch</span>
+          <span class="route-label">LLIF Launches as a 501(c)(3) Nonprofit</span>
+          <span class="badge badge-featured">Featured</span>
+        </div>
+        <div class="route">
+          <span class="route-path">/news/api-v1-release</span>
+          <span class="route-label">Developer API v1.0 Now Available</span>
+          <span class="badge badge-ssg">SSG</span>
+        </div>
+        <div class="route">
+          <span class="route-path">/news/longitudinal-data-white-paper</span>
+          <span class="route-label">White Paper: Longitudinal Data Infrastructure</span>
+          <span class="badge badge-ssg">SSG</span>
+        </div>
+        <div class="route">
+          <span class="route-path">/news/governance-board-update</span>
+          <span class="route-label">Governance Update: Board &amp; Participant Data Charter</span>
+          <span class="badge badge-ssg">SSG</span>
+        </div>
+        <div class="route">
+          <span class="route-path">/news/data-stewardship-principles</span>
+          <span class="route-label">Why Nonprofit Data Stewardship Is a Technical Choice</span>
+          <span class="badge badge-ssg">SSG</span>
+        </div>
+      </div>
+
+      <!-- Navigation structure -->
+      <div class="section-group">
+        <div class="group-label">Navigation Structure</div>
+        <div class="route">
+          <span class="route-path">Why LLIF</span>
+          <span class="route-label">→ /</span>
+        </div>
+        <div class="route">
+          <span class="route-path">Programs ▾</span>
+          <span class="route-label">What Are Programs · Program Examples · For Organizers</span>
+        </div>
+        <div class="route">
+          <span class="route-path">Platform ▾</span>
+          <span class="route-label">Infrastructure &amp; API · Security &amp; Compliance · Integrations</span>
+        </div>
+        <div class="route">
+          <span class="route-path">For Developers ▾</span>
+          <span class="route-label">Build on LLIF · Pricing · Case Study: Best Life</span>
+        </div>
+        <div class="route">
+          <span class="route-path">For Researchers ▾</span>
+          <span class="route-label">Research Infrastructure · Grant Proposal Support</span>
+        </div>
+        <div class="route">
+          <span class="route-path">About</span>
+          <span class="route-label">→ /about</span>
+        </div>
+        <div class="route">
+          <span class="route-path">News</span>
+          <span class="route-label">→ /news</span>
+        </div>
+        <div class="route">
+          <span class="route-path">Get Involved (CTA)</span>
+          <span class="route-label">→ /contact</span>
+        </div>
+      </div>
+
+      <!-- Content files -->
+      <div class="section-group">
+        <div class="group-label">Content Files (Markdown)</div>
+        <div class="route">
+          <span class="route-path">content/news/*.md</span>
+          <span class="route-label">5 posts · gray-matter + remark → HTML</span>
+        </div>
+      </div>
+
+    </div><!-- /llif -->
+
+
+    <!-- ════════════════ BEST LIFE ════════════════ -->
+    <div class="site-card bestlife">
+      <div class="site-header">
+        <div class="site-label">Consumer App · "Everything App"</div>
+        <div class="site-name">Best Life</div>
+        <div class="site-url">bestlife.app &nbsp;/&nbsp; bestlife-site/</div>
+      </div>
+
+      <!-- Core pages -->
+      <div class="section-group">
+        <div class="group-label">Core Pages</div>
+
+        <div class="route">
+          <span class="route-path">/</span>
+          <span class="route-label">Home — hero, tracking pitch, CTA</span>
+          <span class="badge badge-static">Static</span>
+        </div>
+        <div class="route">
+          <span class="route-path">/about</span>
+          <span class="route-label">About — product story, team</span>
+          <span class="badge badge-static">Static</span>
+        </div>
+        <div class="route">
+          <span class="route-path">/how-it-works</span>
+          <span class="route-label">How It Works — product mechanics</span>
+          <span class="badge badge-static">Static</span>
+        </div>
+        <div class="route">
+          <span class="route-path">/use-cases</span>
+          <span class="route-label">Use Cases — audience scenarios</span>
+          <span class="badge badge-static">Static</span>
+        </div>
+        <div class="route">
+          <span class="route-path">/news</span>
+          <span class="route-label">News — product updates</span>
+          <span class="badge badge-static">Static</span>
+        </div>
+        <div class="route">
+          <span class="route-path">/for-researchers</span>
+          <span class="route-label">For Researchers — data access via LLIF</span>
+          <span class="badge badge-static">Static</span>
+        </div>
+        <div class="route">
+          <span class="route-path">/privacy</span>
+          <span class="route-label">Privacy — LLIF nonprofit data commitments</span>
+          <span class="badge badge-static">Static</span>
+        </div>
+      </div>
+
+      <!-- Navigation structure -->
+      <div class="section-group">
+        <div class="group-label">Navigation Structure</div>
+        <div class="route">
+          <span class="route-path">About</span>
+          <span class="route-label">→ /about</span>
+        </div>
+        <div class="route">
+          <span class="route-path">How It Works</span>
+          <span class="route-label">→ /how-it-works</span>
+        </div>
+        <div class="route">
+          <span class="route-path">Use Cases</span>
+          <span class="route-label">→ /use-cases</span>
+        </div>
+        <div class="route">
+          <span class="route-path">News</span>
+          <span class="route-label">→ /news</span>
+        </div>
+        <div class="route">
+          <span class="route-path">For Researchers</span>
+          <span class="route-label">→ /for-researchers</span>
+        </div>
+        <div class="route">
+          <span class="route-path">Privacy</span>
+          <span class="route-label">→ /privacy</span>
+        </div>
+        <div class="route">
+          <span class="route-path">Early Access (CTA)</span>
+          <span class="route-label">→ / (top of page)</span>
+        </div>
+        <div class="route">
+          <span class="route-path">Start Tracking (CTA)</span>
+          <span class="route-label">→ /#cta</span>
+        </div>
+      </div>
+
+      <!-- Content files -->
+      <div class="section-group">
+        <div class="group-label">Content Files</div>
+        <div class="route">
+          <span class="route-path">content/pages/home.md</span>
+          <span class="route-label">Home page body via ReactMarkdown</span>
+        </div>
+      </div>
+
+    </div><!-- /bestlife -->
+
+  </div><!-- /sites -->
+
+  <!-- Legend -->
+  <div class="legend">
+    <span class="legend-title">Legend:</span>
+    <span class="badge badge-static">Static</span> Prerendered at build time (SSG/SSR off)
+    &nbsp;
+    <span class="badge badge-ssg">SSG</span> Static via generateStaticParams
+    &nbsp;
+    <span class="badge badge-client">Client</span> Contains client-side interactivity
+    &nbsp;
+    <span class="badge badge-featured">Featured</span> Pinned to featured section on hub
+    &nbsp;
+    <span class="badge badge-new">New</span> Added in latest build
+  </div>
+
+  <div class="footer">
+    <span>LLIF_BestLife_Websites · sitemap.html</span>
+    <span>Generated 2026-02-27</span>
+  </div>
+
+</body>
+</html>
